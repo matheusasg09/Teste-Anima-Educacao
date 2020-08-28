@@ -14,7 +14,6 @@
             id="card"
             class="rounded"
             :class="value ? 'background-color: green' :  'background-color: red'"
-            :style="$vuetify.breakpoint.mdAndDown ? 'left: 65%' : 'left: 90%'"
           >
             <span>
               <v-icon
@@ -140,7 +139,8 @@ export default {
   text-align: center;
   position: absolute;
   top: -10px;
-  transform: translate(-50%, -50%);
+  right: -10px;
+  transform: translate(0, -50%);
   opacity: 0.9;
 }
 #card span {
