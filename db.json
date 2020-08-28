@@ -1,11 +1,24 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "funcionarios": [
+        {
+            "id": 1,
+            "nome": "Matheus AUgusto"
+        },
+        {
+            "id": 2,
+            "nome": "João Victor"
+        },
+        {
+            "id": 3,
+            "nome": "Alice Domiciano"
+        },
+        {
+            "id": 4,
+            "nome": "Dulcineia Souza"
+        },
+        {
+            "id": 5,
+            "nome": "Sergio Ricardo"
+        }
+    ]
 }
