@@ -74,18 +74,21 @@
           </template>
           <!-- MODAL  -->
           <v-card class="mx-auto">
-            <v-system-bar color="#059D42" height="30">
-              <v-spacer class="white--text">Quantos reais quer adicionar?</v-spacer>
+            <v-system-bar color="#059D42" height="40">
+              <v-spacer class="white--text subtitle-1">Quantos reais quer adicionar?</v-spacer>
               <v-icon color="white" @click="dialog = false">mdi-close</v-icon>
             </v-system-bar>
             <v-container>
               <v-row>
-                <v-col cols="6" v-for="valueButton in valueButtons" :key="valueButton">
-                  <v-btn
-                    width="100"
-                    @click="addValue(valueButton)"
-                    :disabled="valueButton > worker.maxValue - value ? true : false"
-                  >R$ {{valueButton}}</v-btn>
+                  <v-col class="col-6" v-for="valueButton in valueButtons" :key="valueButton">
+                    <v-btn
+                    block
+                      class="pa-5 title green--text"
+                      width="100"
+                      height="100"
+                      @click="addValue(valueButton)"
+                      :disabled="valueButton > worker.maxValue - value ? true : false"
+                    >R$ {{valueButton}}</v-btn>
                 </v-col>
               </v-row>
             </v-container>
@@ -150,5 +153,4 @@ export default {
 .w-100 {
   width: 100%;
 }
-
 </style>
