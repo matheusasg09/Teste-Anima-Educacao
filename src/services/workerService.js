@@ -5,7 +5,7 @@ const resource = 'workers';
 export default {
   async workersList() {
     try {
-      const response = await http.get(`${resource}`);
+      const response = await http.get(`https://my-json-server.typicode.com/matheusasg09/teste-anima/blob/master/${resource}`);
       return response;
     } catch (error) {
       const { response } = error;
