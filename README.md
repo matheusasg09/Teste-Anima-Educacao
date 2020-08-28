@@ -14,7 +14,7 @@
   <img alt="Frontend" src="img/Bikcraft-git.png" width="80%">
 </p>
 
-## ◾ Projeto
+## ◾ Objetivo do projeto
 
 Sistema desenvolvido para o teste da empresa Ânima Educação, o mesmo foi feito seguindo o style guide do Vue.js
 
@@ -23,7 +23,7 @@ O ambiente esta configurado com deploy automatico utilizando a ferrtamenta [Netl
 
 #### Visualizar o teste: [teste-anima.com.br](https://cranky-cori-097d1f.netlify.app/#/)
 
-## ◾ Tecnologias
+## ◾ Tecnologias utilizadas
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
