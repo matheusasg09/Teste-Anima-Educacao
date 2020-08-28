@@ -2,7 +2,7 @@
   <div>
     <v-container>
       <v-card
-        class="mx-auto mb-8 py-3"
+        class="mx-auto mb-6 py-3"
         :max-width="$vuetify.breakpoint.mdAndDown ? '344' : ''"
         outlined
         :elevation="9"
@@ -31,11 +31,11 @@
                 <v-icon v-show="$vuetify.breakpoint.mdAndUp" color="#059D42">mdi-currency-usd</v-icon>
                 {{worker.name}}
               </div>
-              <v-list-item-subtitle>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</v-list-item-subtitle>
+              <v-list-item class="subtitle-1" >Adicione bônus em dinheiro para seus colaboradores, lembrando que todos tem um limite de bônus baseado em seus cargos.</v-list-item>
             </v-list-item-content>
           </v-list-item>
           <!-- PROGRESS BAR  -->
-          <span class="d-block text-right mr-4">Total R$ {{worker.maxValue}}</span>
+          <span class="d-block text-right mr-4 subtitle-2">Total R$ {{worker.maxValue}}</span>
           <v-row justify="center" align="center">
             <v-container class="mx-4">
               <v-progress-linear
@@ -79,15 +79,15 @@
             </v-system-bar>
             <v-container>
               <v-row>
-                  <v-col class="col-6" v-for="valueButton in valueButtons" :key="valueButton">
-                    <v-btn
+                <v-col class="col-6" v-for="valueButton in valueButtons" :key="valueButton">
+                  <v-btn
                     block
-                      class="pa-5 title green--text"
-                      width="100"
-                      height="100"
-                      @click="addValue(valueButton)"
-                      :disabled="valueButton > worker.maxValue - value ? true : false"
-                    >R$ {{valueButton}}</v-btn>
+                    class="pa-5 title green--text"
+                    width="100"
+                    height="100"
+                    @click="addValue(valueButton)"
+                    :disabled="valueButton > worker.maxValue - value ? true : false"
+                  >R$ {{valueButton}}</v-btn>
                 </v-col>
               </v-row>
             </v-container>
