@@ -1,24 +1,29 @@
 {
-    "funcionarios": [
+    "workers": [
         {
             "id": 1,
-            "nome": "Matheus AUgusto"
+            "name": "Matheus AUgusto",
+            "maxValue": 200
         },
         {
             "id": 2,
-            "nome": "João Victor"
+            "name": "João Victor",
+            "maxValue": 250
         },
         {
             "id": 3,
-            "nome": "Alice Domiciano"
+            "name": "Alice Domiciano",
+            "maxValue": 600
         },
         {
             "id": 4,
-            "nome": "Dulcineia Souza"
+            "name": "Dulcineia Souza",
+            "maxValue": 450
         },
         {
             "id": 5,
-            "nome": "Sergio Ricardo"
+            "name": "Sergio Ricardo",
+            "maxValue": 125
         }
     ]
 }
