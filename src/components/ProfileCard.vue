@@ -1,5 +1,10 @@
 <template>
-  <v-card class="mx-auto mb-10 py-3" max-width="344" outlined :elevation="9">
+  <v-card
+    class="mx-auto mb-10 py-3"
+    :max-width="$vuetify.breakpoint.smAndDown ? '344' : ''"
+    outlined
+    :elevation="9"
+  >
     <!-- CARD  -->
     <div id="wrapper">
       <!-- TAG CARD  -->
@@ -81,10 +86,13 @@
 </template>
 
 <script>
+import workerService from '@/services/workerService';
+
 export default {
   components: {},
   data() {
     return {
+      workersList: [],
       dialog: false,
       absolute: false,
       active: true,
@@ -108,14 +116,19 @@ export default {
       this.value += value;
       this.dialog = false;
     },
-    teste() {
-      fetch('https://my-json-server.typicode.com/matheusasg09/teste-anima/blob/master/funcionarios')
-        .then((response) => response.json())
-        .then((json) => console.log(json));
+    async fetchWorkers() {
+      try {
+        const response = await workerService.workersList();
+        const { data } = response;
+        this.workersList = data;
+        console.log(this.workersList);
+      } catch (error) {
+        console.log(error);
+      }
     },
   },
   created() {
-    this.teste();
+    this.fetchWorkers();
   },
 };
 </script>
