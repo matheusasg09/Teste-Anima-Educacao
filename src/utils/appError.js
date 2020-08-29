@@ -1,10 +1,8 @@
 class AppError {
   constructor(response, statusCode = 400) {
     let msg = '';
-    if (response && response.status === 500) {
-      msg = 'Senha incorreta';
-    } else if (response && response.data && response.data.message) {
-      msg = response.data.message;
+    if (response && response.status === 404) {
+      msg = 'Erro ao listar colaboradroes.';
     } else {
       msg = 'Ocorreu um erro. Tente novamente';
     }
