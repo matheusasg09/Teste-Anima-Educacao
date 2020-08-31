@@ -47,7 +47,7 @@ export default {
       setTimeout(() => {
         this.isProgress = true;
         this.fetchWorkers();
-      }, 3000);
+      }, 1500);
     },
   },
   created() {
