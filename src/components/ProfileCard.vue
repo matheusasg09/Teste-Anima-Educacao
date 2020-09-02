@@ -35,7 +35,7 @@
             </v-list-item-content>
           </v-list-item>
           <!-- PROGRESS BAR  -->
-          <span class="d-block text-right mr-4 subtitle-2">Total R$ {{worker.maxValue}}</span>
+          <span class="d-block text-right mr-4 subtitle-2">Valor máximo R$ {{worker.maxValue}}</span>
           <v-row justify="center" align="center">
             <v-container class="mx-4">
               <v-progress-linear
