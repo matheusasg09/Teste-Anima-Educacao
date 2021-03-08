@@ -31,7 +31,7 @@
                 <v-icon v-show="$vuetify.breakpoint.mdAndUp" color="#059D42">mdi-currency-usd</v-icon>
                 {{worker.name}}
               </div>
-              <v-list-item class="subtitle-1" >Adicione bônus em dinheiro para seus colaboradores, lembrando que todos tem um limite de bônus baseado em seus cargos.</v-list-item>
+              <v-list-item class="subtitle-1" >Adicione BITCOIN em dinheiro para seus colaboradores, lembrando que todos tem um limite de bônus baseado em seus cargos.</v-list-item>
             </v-list-item-content>
           </v-list-item>
           <!-- PROGRESS BAR  -->
